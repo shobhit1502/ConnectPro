@@ -1,0 +1,26 @@
+.headerOption{
+    display: flex;
+    flex-direction: column;
+    /* By default flex-direction is row */
+    align-items: center;
+    margin-right: 20px;
+    color: gray;
+    cursor: pointer;
+}
+
+/* Whenever the cursor hovers over the div */
+.headerOption:hover{
+    color: black;
+}
+
+.headerOption_title{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.headerOption__icon {
+    height: 25px !important;
+    /* To override material-ui styles or any default css */
+    object-fit: contain;
+    width: 25px !important;
+}

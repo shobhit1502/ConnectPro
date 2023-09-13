@@ -1,0 +1,53 @@
+.header{
+    display: flex;
+    /* This will display items in a row */
+    position: sticky;
+    top: 0;
+    /* These two ensures header remains at that position even if we scroll down */
+    z-index: 999;
+    /* Here, z-index is also defined because of all sticky containers, we want header to be on top. MORE THE Z-INDEX, THE HIGHER IT IS IN THE STACK */
+    justify-content: space-evenly;
+    /* Even space between all the child divs */
+    border-bottom: 0.1px solid lightgray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: white;
+}
+
+.header__left{
+    display: flex;
+}
+
+.header__left > img{
+    object-fit: contain;
+    /* Whenever the page resizes, contain helps to maintain the aspect ratio of the image */
+    height: 40px;
+    margin-right: 10px;
+}
+
+.header__search {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    height: 22px;
+    color: gray;
+    background-color: #eef3f8;
+}
+
+.header__search > input {
+    outline: none;
+    border: none;
+    background: none;
+    /* To make the text input box disappear */
+}
+
+.header__search > img {
+    object-fit: contain;
+    height: 20px;
+}
+
+.header__right{
+    display: flex;
+}
